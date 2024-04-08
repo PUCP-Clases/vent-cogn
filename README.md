@@ -90,12 +90,18 @@ Se necesita [`Python 3`](https://www.python.org/downloads/) en el sistema.
 
 3. **Editar el archivo `variables.json`**, las variables `datalake_landing_path`: ruta de la tabla del datalake donde se almacenan los archivos pre procesados en pormato .json, `schema_name_predict_output`: nombre de esquema de BD (predicciones), `level_deploy`: nivel de despliegue {'dev', 'test', 'prod'} y `ftp_name`: nombre del Servidor FTP.
 
+Nota: Para Linux cambiar el valor de la variable `poppler_path` por `/usr/bin`
+
 ---
 
 4. **Configurar Poppler:**
     - Windows:
 
             tar -xf .\comp\Poppler-23.11.0-0.zip -C .\src\lib\
+
+    - Linux:
+
+          sudo apt-get install poppler-utils
 
 ---
 
