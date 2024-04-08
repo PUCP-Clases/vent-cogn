@@ -105,15 +105,19 @@ Se necesita [`Python 3`](https://www.python.org/downloads/) en el sistema.
         Descomprimir `/comp/instantclient-basic-windows.x64-19.22.0.0.0dbru.zip` en una carpeta (de preferencia en una unidad diferente de la C:), posteriormente agregar la ruta descomprimida en la variable de sistema `Path` y luego aceptar y guardar cambios.
 
     - Linux:
+      Descomprimir archivo.
 
           unzip comp/instantclient-basic-linux.x64-11.2.0.4.0.zip -d /opt/oracle
       
+      Crear archivo de configuración para encontrar ruta de oracle
 
           sh -c "echo /opt/oracle/instantclient_11_2 > /etc/ld.so.conf.d/oracle-instantclient.conf"
       
+      Actualizar la cache de los enlaces dinámicos
 
           ldconfig
       
+      Establecemos la variable de entorno LD_LIBRARY_PATH
 
           export LD_LIBRARY_PATH=/opt/oracle/instantclient_11_2:$LD_LIBRARY_PATH
 
