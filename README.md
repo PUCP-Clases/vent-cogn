@@ -106,11 +106,14 @@ Se necesita [`Python 3`](https://www.python.org/downloads/) en el sistema.
 
     - Linux:
 
-          unzip /app/comp/instantclient-basic-linux.x64-11.2.0.4.0.zip -d /opt/oracle
+          unzip comp/instantclient-basic-linux.x64-11.2.0.4.0.zip -d /opt/oracle
+      
 
           sh -c "echo /opt/oracle/instantclient_11_2 > /etc/ld.so.conf.d/oracle-instantclient.conf"
+      
 
           ldconfig
+      
 
           export LD_LIBRARY_PATH=/opt/oracle/instantclient_11_2:$LD_LIBRARY_PATH
 
