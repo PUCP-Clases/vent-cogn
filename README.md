@@ -105,6 +105,7 @@ Se necesita [`Python 3`](https://www.python.org/downloads/) en el sistema.
         Descomprimir `/comp/instantclient-basic-windows.x64-19.22.0.0.0dbru.zip` en una carpeta (de preferencia en una unidad diferente de la C:), posteriormente agregar la ruta descomprimida en la variable de sistema `Path` y luego aceptar y guardar cambios.
 
     - Linux:
+
       Descomprimir archivo.
 
           unzip comp/instantclient-basic-linux.x64-11.2.0.4.0.zip -d /opt/oracle
