@@ -1,0 +1,13 @@
+{
+	"transformer_path" : "src/assets/transformer",
+	"datalake_landing_path" :"/opt/datalake",
+	"log_path" : "log",
+	"error_path" : "data/error",
+	"poppler_path" : "src/lib/poppler-23.11.0/Library/bin",
+	"key_path" : "security",
+	"credential_path" : "security",
+	"schema_name_predict_output" : "sch_dscientist",
+	"table_name_predict_output" : "TB_OUT_MODEL_ML_VENTCOGNTVA_HM",
+	"level_deploy" : "test",
+	"ftp_name" : "ventanilla"
+}
