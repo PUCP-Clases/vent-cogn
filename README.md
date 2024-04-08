@@ -104,6 +104,16 @@ Se necesita [`Python 3`](https://www.python.org/downloads/) en el sistema.
         
         Descomprimir `/comp/instantclient-basic-windows.x64-19.22.0.0.0dbru.zip` en una carpeta (de preferencia en una unidad diferente de la C:), posteriormente agregar la ruta descomprimida en la variable de sistema `Path` y luego aceptar y guardar cambios.
 
+    - Linux:
+
+          unzip /app/comp/instantclient-basic-linux.x64-11.2.0.4.0.zip -d /opt/oracle
+
+          sh -c "echo /opt/oracle/instantclient_11_2 > /etc/ld.so.conf.d/oracle-instantclient.conf"
+
+          ldconfig
+
+          export LD_LIBRARY_PATH=/opt/oracle/instantclient_11_2:$LD_LIBRARY_PATH
+
 ---
 
 6. **Crear un nuevo entorno virtual y activarlo:**
@@ -111,7 +121,7 @@ Se necesita [`Python 3`](https://www.python.org/downloads/) en el sistema.
 
             python -m venv venv; venv\Scripts\activate; python -m pip install -q --upgrade pip; python -m pip install -r requirements.txt; python -m spacy download es_core_news_sm
 
-    - Linux & MacOs:
+    - Linux:
     
             python3 -m venv venv; source venv/bin/activate; python -m pip install -q --upgrade pip; python -m pip install -r requirements.txt; python -m spacy download es_core_news_sm
 
